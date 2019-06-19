@@ -1,0 +1,9 @@
+2019-06-19 14:24:56.586[main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop -==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?,?,?, ?,?) 
+2019-06-19 14:24:56.630[main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop -==> Parameters: 1(Long), 2(Integer), 1(Long), 测试店铺(String), test(String), test(String), test(String), test(String), null, 2019-06-19 14:24:56.294(Timestamp), null, 1(Integer), 审核中(String)
+2019-06-19 14:24:56.731[main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop -<==    Updates: 1
+2019-06-19 15:43:39.604[main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop -==>  Preparing: UPDATE tb_shop SET shop_desc=?, shop_addr=? WHERE shop_id = ? 
+2019-06-19 15:43:39.637[main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop -==> Parameters: 测试描述(String), 测试地址(String), 1(Long)
+2019-06-19 15:43:39.746[main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop -<==    Updates: 1
+2019-06-19 15:44:36.040[main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop -==>  Preparing: UPDATE tb_shop SET shop_desc=?, shop_addr=?, last_edit_time=? WHERE shop_id = ? 
+2019-06-19 15:44:36.079[main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop -==> Parameters: 测试描述(String), 测试地址(String), 2019-06-19 15:44:35.805(Timestamp), 1(Long)
+2019-06-19 15:44:36.124[main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop -<==    Updates: 1
