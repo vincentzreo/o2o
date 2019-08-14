@@ -10,6 +10,12 @@ public enum ShopStateEnum {
         this.state = state;
         this.stateInfo = stateInfo;
     }
+
+    /**
+     * 依据传入的state值返回相应的enum值
+     * @param state
+     * @return
+     */
     public static ShopStateEnum stateOf(int state){
         for (ShopStateEnum stateEnum : values()){
             if (stateEnum.getState() == state){

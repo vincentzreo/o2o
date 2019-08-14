@@ -10,4 +10,12 @@ public interface AreaDao {
      * @return arealist
      */
     List<Area> queryArea();
+    //增加
+    void add(Area area);
+    //删除
+    void delete(Area area);
+    //改
+    void update(Area area);
+    //查
+    Area get(int id);
 }

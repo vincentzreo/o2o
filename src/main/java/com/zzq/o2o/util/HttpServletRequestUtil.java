@@ -35,6 +35,7 @@ public class HttpServletRequestUtil {
         try {
             String result = request.getParameter(key);
             if (result != null){
+                //去掉两侧的空格
                 result = result.trim();
             }
             if ("".equals(result)){

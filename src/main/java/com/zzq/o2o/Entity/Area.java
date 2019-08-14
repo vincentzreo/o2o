@@ -7,7 +7,7 @@ public class Area {
     private Integer areaId;
     //名称
     private String areaName;
-    //权重
+    //权重下·
     private Integer priority;
     //创建时间
     private Date createTime;

@@ -28,7 +28,7 @@ public class ShopDaoTest extends BaseTest {
         shop.setOwner(personInfo);
         shop.setArea(area);
         shop.setShopCategory(shopCategory);
-        shop.setShopName("测试店铺");
+        shop.setShopName("测试店铺new");
         shop.setShopDesc("test");
         shop.setShopAddr("test");
         shop.setPhone("test");
