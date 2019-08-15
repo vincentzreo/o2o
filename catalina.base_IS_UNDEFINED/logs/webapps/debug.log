@@ -1,9 +1,21 @@
-2019-08-14 13:40:38.594[main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop -==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?,?,?, ?,?) 
-2019-08-14 13:40:38.652[main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop -==> Parameters: 1(Long), 2(Integer), 1(Long), 测试店铺new(String), test(String), test(String), test(String), test(String), null, 2019-08-14 13:40:38.36(Timestamp), null, 1(Integer), 审核中(String)
-2019-08-14 13:40:38.677[main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop -<==    Updates: 1
-2019-08-14 13:56:55.285[main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop -==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES (?,?,?,?, ?,?,?,?,?,?,?, ?,?) 
-2019-08-14 13:56:55.335[main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop -==> Parameters: 1(Long), 2(Integer), 1(Long), 测试店铺2(String), test1(String), test1(String), test1(String), null, null, 2019-08-14 13:56:55.268(Timestamp), 2019-08-14 13:56:55.268(Timestamp), 0(Integer), 审核中(String)
-2019-08-14 13:56:55.341[main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop -<==    Updates: 1
-2019-08-14 13:56:55.597[main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop -==>  Preparing: UPDATE tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, phone=?, shop_img=?, last_edit_time=?, enable_status=?, advice=?, shop_category_id = ?, area_id=? WHERE shop_id = ? 
-2019-08-14 13:56:55.598[main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop -==> Parameters: 测试店铺2(String), test1(String), test1(String), test1(String), upload\item\shop\7\2019081413565514781.jpg(String), 2019-08-14 13:56:55.268(Timestamp), 0(Integer), 审核中(String), 1(Long), 2(Integer), 7(Long)
-2019-08-14 13:56:55.605[main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop -<==    Updates: 1
+2019-08-16 00:14:39.558[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_img, shop_category_desc, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
+2019-08-16 00:14:39.593[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==> Parameters: 
+2019-08-16 00:14:39.641[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -<==      Total: 1
+2019-08-16 00:19:42.456[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_img, shop_category_desc, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
+2019-08-16 00:19:42.489[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==> Parameters: 
+2019-08-16 00:19:42.519[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -<==      Total: 2
+2019-08-16 00:19:42.527[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_img, shop_category_desc, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id=? ORDER BY priority DESC 
+2019-08-16 00:19:42.528[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==> Parameters: 1(Long)
+2019-08-16 00:19:42.529[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -<==      Total: 0
+2019-08-16 00:24:32.939[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_img, shop_category_desc, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
+2019-08-16 00:24:32.974[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==> Parameters: 
+2019-08-16 00:24:33.004[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -<==      Total: 2
+2019-08-16 00:24:33.012[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_img, shop_category_desc, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id=? ORDER BY priority DESC 
+2019-08-16 00:24:33.012[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==> Parameters: 1(Long)
+2019-08-16 00:24:33.013[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -<==      Total: 0
+2019-08-16 00:41:07.822[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_img, shop_category_desc, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
+2019-08-16 00:41:07.856[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==> Parameters: 
+2019-08-16 00:41:07.895[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -<==      Total: 2
+2019-08-16 00:41:07.904[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_img, shop_category_desc, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id=? ORDER BY priority DESC 
+2019-08-16 00:41:07.905[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -==> Parameters: 1(Long)
+2019-08-16 00:41:07.906[main] DEBUG com.zzq.o2o.dao.ShopCategoryDao.queryShopCategory -<==      Total: 1
