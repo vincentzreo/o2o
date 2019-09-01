@@ -4,6 +4,12 @@ import com.zzq.o2o.Entity.Shop;
 
 public interface ShopDao {
     /**
+     * 通过shop id 查询商铺
+     * @param shopId
+     * @return
+     */
+    Shop queryByShopId(long shopId);
+    /**
      * 新增店铺
      * @param shop
      * @return

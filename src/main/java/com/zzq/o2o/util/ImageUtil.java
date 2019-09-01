@@ -65,6 +65,16 @@ public class ImageUtil {
         return nowTimeStr + rannum;
     }
 
+    /**
+     * storePath是文件的路径还是目录的路径
+     * 如果是文件路径则删除文件
+     * 如果是目录路径则删除该目录下的所有路径
+     * @param storePath
+     */
+    public static void deleteFileOrPath(String storePath){
+
+    }
+
     public static void main(String[] args) throws IOException {
         Thumbnails.of(new File("D:/BaiduNetdiskDownload/images/lixianglang.jpg"))
                 .size(200,200).watermark(Positions.BOTTOM_RIGHT,

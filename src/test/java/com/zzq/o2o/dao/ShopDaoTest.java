@@ -5,6 +5,7 @@ import com.zzq.o2o.Entity.Area;
 import com.zzq.o2o.Entity.PersonInfo;
 import com.zzq.o2o.Entity.Shop;
 import com.zzq.o2o.Entity.ShopCategory;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -17,6 +18,14 @@ public class ShopDaoTest extends BaseTest {
     @Autowired
     private ShopDao shopDao;
     @Test
+    public void testQueryByShopId(){
+        long shopId = 1;
+        Shop shop = shopDao.queryByShopId(shopId);
+        System.out.println("areaName:" + shop.getArea().getAreaName());
+        System.out.println("areaId:" + shop.getArea().getAreaId());
+    }
+    @Test
+    @Ignore
     public void TestInsertShop(){
         Shop shop = new Shop();
         PersonInfo personInfo = new PersonInfo();
@@ -40,6 +49,7 @@ public class ShopDaoTest extends BaseTest {
         assertEquals(1,effectedNum);
     }
     @Test
+    @Ignore
     public void TestUpdateShop(){
         Shop shop = new Shop();
         shop.setShopId(1L);
